@@ -1,0 +1,114 @@
+
+1 - INÍCIO
+
+Mini Jogo de Cartas
+versão do mIRC usada: 7.46
+data: Jan/2017
+repositório: twitch-jogo-cartas
+
+
+2 - DESCRIÇÃO DO BOT
+
+Bot com Mini Jogo de Cartas para Chat de canal da Twitch.
+O bot adiciona o nome de cada Viewer ao entrarem no chat.
+O bot adiciona 1 Ficha para cada viewer a cada 3 minutos em que estiverem
+no chat.
+O bot foi criado utilizando mIRC 7.46.
+Para utilizar o bot com o jogo é necessário conectar no chat do canal
+utilizando o mIRC.
+
+
+
+3 - INSTALAÇÃO
+
+Os arquivos devem estar dentro de uma pasta com o nome "BOT", com exceção do
+arquivo "remote.ini".
+A pasta "BOT" deve ser CRIADA dentro da pasta de configuração do mIRC, "%appdata%\mIRC".
+Se precisar mudar o diretório onde os arquivos ficam, é preciso mudar também 
+as Strings de diretório setadas nas variáveis globais do bot, que são criadas no evento
+"JOIN", no arquivo "remote.ini".
+O arquivo "remote.ini" deve ficar dentro do diretório "%appdata%\mIRC\scripts".
+
+Para usar o jogo, é preciso conectar com um usuário da twitch ("usuário para o bot")
+no chat do canal , usando o mIRC.
+Tutorial para conectar ao chat com o mIRC:
+
+https://help.twitch.tv/customer/portal/articles/1302780-twitch-irc#MIRC
+
+
+
+3 - DESCRIÇÃO DO JOGO
+
+Suporta somente 2 jogadores por Partida.
+Os jogadores entram na partida e recebem 3 cartas aleatórias cada. Escolhem 1 carta.
+Então têm a opção de Trocar de carta ou finalizar a jogada.
+Após os jogadores finalizarem, o jogo mostra as Cartas de ambos, e adiciona
+Fichas para aquele com a maior carta.
+
+Observação: 
+Essa versão não possui delay para as mensagens do bot enviadas para o chat.
+Se o chat do canal possuir delay de 5 segundos ou mais, é preciso usar
+a versão com delay.
+
+
+
+ - COMANDOS
+
+!addmod		- Dono do canal pode Adicionar e Remover usuários com permissão de adicionar fichas
+parâmetros	- $1 - !addmod
+		- $2 - nome do usuário
+
+
+!remmod		- Remover permissão de usuário
+parâmetros	- $1 - !remmod
+		- $2 - nome do usuário
+
+
+!addchips	- Adiciona Fichas para um usuário
+parâmetros	- $1 - !addchips
+		- $2 - nome do usuário
+		- $3 - Quantidade
+
+
+!removechips	- Remove Fichas para um usuário
+parâmetros	- $1 - !removechips
+		- $2 - nome do usuário
+		- $3 - Quantidade
+
+
+!fichas		- Envia mensagem privada com quantidade de fichas
+
+!end		- Dono do Canal Encerra o jogo
+
+!cards		- Jogador 1 e jogador 2 digitam para entrar na partida
+
+!1		- Escolher carta 1 ou Trocar se já tiver escolhido outra
+!2		- Escolher carta 2 ou Trocar se já tiver escolhido outra
+!3		- Escolher carta 3 ou Trocar se já tiver escolhido outra
+
+!go		- Usado para chamar resultado do jogo após escolha da carta
+
+
+
+ - ARQUIVOS
+
+CARDS.txt	- Contêm todas as cartas
+
+CARDSTEMP.txt	- Contêm todas as cartas. As cartas são apagadas durante a partida.
+		- O arquivo é restaurado após o término do jogo.
+
+CARDSID.ini	- Contêm todas as cartas e seus IDs.
+
+CHIPS.ini	- Contêm a quantidade de Fichas de cada usuário (Viewer).
+
+MODS.txt	- Contêm os nomes dos usuários com permissão para Adicionar e Remover fichas.
+
+VARIABLES.ini	- Contêm valores de variáveis usadas durante o jogo.
+
+VIEWERS.txt	- Contêm todos os viewers presentes no chat do canal. Não está sendo usado no jogo.
+
+remote.ini	- Contêm todo script do bot e do jogo.
+
+
+
+

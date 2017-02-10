@@ -1,35 +1,37 @@
 
-1 - INÕCIO
+1 - IN√çCIO
 
 Mini Jogo de Cartas
-vers„o do mIRC usada: 7.46
+vers√£o do mIRC usada: 7.46
 data: Jan/2017
-repositÛrio: twitch-jogo-cartas
+reposit√≥rio: twitch-jogo-cartas
 
 
-2 - DESCRI«√O DO BOT
+2 - DESCRI√á√ÉO DO BOT
 
+O Bot √© usado para disponibilizar um mini Jogo de cartas. E tamb√©m serve
+como Exemplo de uso de algumas fun√ß√µes b√°sicas para chat do mIRC.
 Bot com Mini Jogo de Cartas para Chat de canal da Twitch.
 O bot adiciona o nome de cada Viewer ao entrarem no chat.
 O bot adiciona 1 Ficha para cada viewer a cada 3 minutos em que estiverem
 no chat.
 O bot foi criado utilizando mIRC 7.46.
-Para utilizar o bot com o jogo È necess·rio conectar no chat do canal
+Para utilizar o bot com o jogo √© necess√°rio conectar no chat do canal
 utilizando o mIRC.
 
 
 
-3 - INSTALA«√O
+3 - INSTALA√á√ÉO
 
-Os arquivos devem estar dentro de uma pasta com o nome "BOT", com exceÁ„o do
+Os arquivos devem estar dentro de uma pasta com o nome "BOT", com exce√ß√£o do
 arquivo "remote.ini".
-A pasta "BOT" deve ser CRIADA dentro da pasta de configuraÁ„o do mIRC, "%appdata%\mIRC".
-Se precisar mudar o diretÛrio onde os arquivos ficam, È preciso mudar tambÈm 
-as Strings de diretÛrio setadas nas vari·veis globais do bot, que s„o criadas no evento
+A pasta "BOT" deve ser CRIADA dentro da pasta de configura√ß√£o do mIRC, "%appdata%\mIRC".
+Se precisar mudar o diret√≥rio onde os arquivos ficam, √© preciso mudar tamb√©m 
+as Strings de diret√≥rio setadas nas vari√°veis globais do bot, que s√£o criadas no evento
 "JOIN", no arquivo "remote.ini".
-O arquivo "remote.ini" deve ficar dentro do diretÛrio "%appdata%\mIRC\scripts".
+O arquivo "remote.ini" deve ficar dentro do diret√≥rio "%appdata%\mIRC\scripts".
 
-Para usar o jogo, È preciso conectar com um usu·rio da twitch ("usu·rio para o bot")
+Para usar o jogo, √© preciso conectar com um usu√°rio da twitch ("usu√°rio para o bot")
 no chat do canal , usando o mIRC.
 Tutorial para conectar ao chat com o mIRC:
 
@@ -37,42 +39,42 @@ https://help.twitch.tv/customer/portal/articles/1302780-twitch-irc#MIRC
 
 
 
-3 - DESCRI«√O DO JOGO
+3 - DESCRI√á√ÉO DO JOGO
 
 Suporta somente 2 jogadores por Partida.
-Os jogadores entram na partida e recebem 3 cartas aleatÛrias cada. Escolhem 1 carta.
-Ent„o tÍm a opÁ„o de Trocar de carta ou finalizar a jogada.
-ApÛs os jogadores finalizarem, o jogo mostra as Cartas de ambos, e adiciona
+Os jogadores entram na partida e recebem 3 cartas aleat√≥rias cada. Escolhem 1 carta.
+Ent√£o t√™m a op√ß√£o de Trocar de carta ou finalizar a jogada.
+Ap√≥s os jogadores finalizarem, o jogo mostra as Cartas de ambos, e adiciona
 Fichas para aquele com a maior carta.
 
-ObservaÁ„o: 
-Essa vers„o n„o possui delay para as mensagens do bot enviadas para o chat.
-Se o chat do canal possuir delay de 5 segundos ou mais, È preciso usar
-a vers„o com delay.
+Observa√ß√£o: 
+Essa vers√£o n√£o possui delay para as mensagens do bot enviadas para o chat.
+Se o chat do canal possuir delay de 5 segundos ou mais, √© preciso usar
+a vers√£o com delay.
 
 
 
  - COMANDOS
 
-!addmod		- Dono do canal pode Adicionar e Remover usu·rios com permiss„o de adicionar fichas
-par‚metros	- $1 - !addmod
-		- $2 - nome do usu·rio
+!addmod		- Dono do canal pode Adicionar e Remover usu√°rios com permiss√£o de adicionar fichas
+par√¢metros	- $1 - !addmod
+		- $2 - nome do usu√°rio
 
 
-!remmod		- Remover permiss„o de usu·rio
-par‚metros	- $1 - !remmod
-		- $2 - nome do usu·rio
+!remmod		- Remover permiss√£o de usu√°rio
+par√¢metros	- $1 - !remmod
+		- $2 - nome do usu√°rio
 
 
-!addchips	- Adiciona Fichas para um usu·rio
-par‚metros	- $1 - !addchips
-		- $2 - nome do usu·rio
+!addchips	- Adiciona Fichas para um usu√°rio
+par√¢metros	- $1 - !addchips
+		- $2 - nome do usu√°rio
 		- $3 - Quantidade
 
 
-!removechips	- Remove Fichas para um usu·rio
-par‚metros	- $1 - !removechips
-		- $2 - nome do usu·rio
+!removechips	- Remove Fichas para um usu√°rio
+par√¢metros	- $1 - !removechips
+		- $2 - nome do usu√°rio
 		- $3 - Quantidade
 
 
@@ -82,32 +84,32 @@ par‚metros	- $1 - !removechips
 
 !cards		- Jogador 1 e jogador 2 digitam para entrar na partida
 
-!1		- Escolher carta 1 ou Trocar se j· tiver escolhido outra
-!2		- Escolher carta 2 ou Trocar se j· tiver escolhido outra
-!3		- Escolher carta 3 ou Trocar se j· tiver escolhido outra
+!1		- Escolher carta 1 ou Trocar se j√° tiver escolhido outra
+!2		- Escolher carta 2 ou Trocar se j√° tiver escolhido outra
+!3		- Escolher carta 3 ou Trocar se j√° tiver escolhido outra
 
-!go		- Usado para chamar resultado do jogo apÛs escolha da carta
+!go		- Usado para chamar resultado do jogo ap√≥s escolha da carta
 
 
 
  - ARQUIVOS
 
-CARDS.txt	- ContÍm todas as cartas
+CARDS.txt	- Cont√™m todas as cartas
 
-CARDSTEMP.txt	- ContÍm todas as cartas. As cartas s„o apagadas durante a partida.
-		- O arquivo È restaurado apÛs o tÈrmino do jogo.
+CARDSTEMP.txt	- Cont√™m todas as cartas. As cartas s√£o apagadas durante a partida.
+		- O arquivo √© restaurado ap√≥s o t√©rmino do jogo.
 
-CARDSID.ini	- ContÍm todas as cartas e seus IDs.
+CARDSID.ini	- Cont√™m todas as cartas e seus IDs.
 
-CHIPS.ini	- ContÍm a quantidade de Fichas de cada usu·rio (Viewer).
+CHIPS.ini	- Cont√™m a quantidade de Fichas de cada usu√°rio (Viewer).
 
-MODS.txt	- ContÍm os nomes dos usu·rios com permiss„o para Adicionar e Remover fichas.
+MODS.txt	- Cont√™m os nomes dos usu√°rios com permiss√£o para Adicionar e Remover fichas.
 
-VARIABLES.ini	- ContÍm valores de vari·veis usadas durante o jogo.
+VARIABLES.ini	- Cont√™m valores de vari√°veis usadas durante o jogo.
 
-VIEWERS.txt	- ContÍm todos os viewers presentes no chat do canal. N„o est· sendo usado no jogo.
+VIEWERS.txt	- Cont√™m todos os viewers presentes no chat do canal. N√£o est√° sendo usado no jogo.
 
-remote.ini	- ContÍm todo script do bot e do jogo.
+remote.ini	- Cont√™m todo script do bot e do jogo.
 
 
 
